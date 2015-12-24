@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mojo-Android-UI/481 -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Android Test Suite" thread-count="7" parallel="tests">
+<parameter name="jobName" value="demo"/>
+<parameter name="buildNo" value="na"/>
+<parameter name="firstPage" value="com.mm.merchant.app.LoginActivity"/>
+<parameter name="OSType" value="Android"/>
+<parameter name="appID" value="com.mm.merchant.app"/>
+<listeners>
+<listener class-name="com.api.TestConfig"/>
+</listeners>
+<test name="emulator Nexus5">
+<parameter name="delay" value="0"/>
+<parameter name="port" value="4801"/>
+<parameter name="deviceModel" value="emulator_Nexus5"/>
+<parameter name="deviceID" value="emulator-5554"/>
+<parameter name="sizeType" value="phone"/>
+<parameter name="osVersion" value="4.4"/>
+<classes>
+<class name="com.wweco.mm.demo.EnterUsername"/>
+</classes>
+</test>
+<!-- <test name="Mojo Tests - Samsang_note2">
+<parameter name="delay" value="0"/>
+<parameter name="port" value="4802"/>
+<parameter name="deviceModel" value="Samsang_note2"/>
+<parameter name="deviceID" value="4df7455805a6cf73"/>
+<parameter name="sizeType" value="phone"/>
+<parameter name="osVersion" value="4.3"/>
+<classes>
+<class name="com.gibson.mojo.ui.SideMenuClickGrid"/>
+<class name="com.gibson.mojo.ui.SideMenuSwipeGrid"/>
+</classes>
+</test>
+<test name="Mojo Tests - Sumsang_A3">
+<parameter name="delay" value="0"/>
+<parameter name="port" value="4806"/>
+<parameter name="deviceModel" value="Sumsang_A3"/>
+<parameter name="deviceID" value="908ed605"/>
+<parameter name="sizeType" value="phone"/>
+<parameter name="osVersion" value="4.4"/>
+<classes>
+<class name="com.gibson.mojo.ui.SideMenuClickGrid"/>
+<class name="com.gibson.mojo.ui.SideMenuSwipeGrid"/>
+</classes>
+</test>
+<test name="Mojo Tests - LG_Flex2">
+<parameter name="delay" value="0"/>
+<parameter name="port" value="4808"/>
+<parameter name="deviceModel" value="LG_Flex2"/>
+<parameter name="deviceID" value="LGH95959c74155"/>
+<parameter name="sizeType" value="phone"/>
+<parameter name="osVersion" value="5.0"/>
+<classes>
+<class name="com.gibson.mojo.ui.SideMenuClickGrid"/>
+<class name="com.gibson.mojo.ui.SideMenuSwipeGrid"/>
+</classes>
+</test>
+<test name="Mojo Tests - HTC_Nexus9">
+<parameter name="delay" value="0"/>
+<parameter name="port" value="4809"/>
+<parameter name="deviceModel" value="HTC_Nexus9"/>
+<parameter name="deviceID" value="HT515WV04358"/>
+<parameter name="sizeType" value="tablet"/>
+<parameter name="osVersion" value="6.0"/>
+<classes>
+<class name="com.gibson.mojo.ui.SideMenuClickGrid"/>
+<class name="com.gibson.mojo.ui.SideMenuSwipeGrid"/>
+</classes>
+</test>
+<test name="Mojo Tests - Sony_Z2">
+<parameter name="delay" value="0"/>
+<parameter name="port" value="4810"/>
+<parameter name="deviceModel" value="Sony_Z2"/>
+<parameter name="deviceID" value="BH90EY5116"/>
+<parameter name="sizeType" value="phone"/>
+<parameter name="osVersion" value="5.1"/>
+<classes>
+<class name="com.gibson.mojo.ui.SideMenuClickGrid"/>
+<class name="com.gibson.mojo.ui.SideMenuSwipeGrid"/>
+</classes>
+</test>
+<test name="Mojo Tests - Samsang_Note4">
+<parameter name="delay" value="0"/>
+<parameter name="port" value="4812"/>
+<parameter name="deviceModel" value="Samsang_Note4"/>
+<parameter name="deviceID" value="4100b9d7e4ea9101"/>
+<parameter name="sizeType" value="phone"/>
+<parameter name="osVersion" value="4.4"/>
+<classes>
+<class name="com.gibson.mojo.ui.SideMenuClickGrid"/>
+<class name="com.gibson.mojo.ui.SideMenuSwipeGrid"/>
+</classes>
+</test> -->
+</suite>
