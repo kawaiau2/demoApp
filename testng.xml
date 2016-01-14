@@ -21,7 +21,7 @@
 <class name="com.wweco.mm.demo.EnterUsername"/>
 </classes>
 </test>
-<test name="BlackBerry Priv">
+<!-- <test name="BlackBerry Priv">
 <parameter name="delay" value="0"/>
 <parameter name="port" value="4802"/>
 <parameter name="deviceModel" value="BlackBerry_Priv"/>
@@ -31,7 +31,7 @@
 <classes>
 <class name="com.wweco.mm.demo.EnterUsername"/>
 </classes>
-</test>
+</test> -->
 <!-- <test name="Mojo Tests - Samsang_note2">
 <parameter name="delay" value="0"/>
 <parameter name="port" value="4802"/>
