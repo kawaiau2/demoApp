@@ -21,13 +21,13 @@
 <class name="com.wweco.mm.demo.EnterUsername"/>
 </classes>
 </test>
-<test name=“BlackBerry Priv”>
+<test name="BlackBerry Priv">
 <parameter name="delay" value="0"/>
 <parameter name="port" value="4802"/>
 <parameter name="deviceModel" value="BlackBerry_Priv"/>
 <parameter name="deviceID" value="1162171619"/>
 <parameter name="sizeType" value="phone"/>
-<parameter name="osVersion" value=“5.1.1”/>
+<parameter name="osVersion" value="5.1.1"/>
 <classes>
 <class name="com.wweco.mm.demo.EnterUsername"/>
 </classes>
