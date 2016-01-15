@@ -21,6 +21,17 @@
 <class name="com.wweco.mm.demo.EnterUsername"/>
 </classes>
 </test>
+<test name="emulator Nexus6P">
+<parameter name="delay" value="0"/>
+<parameter name="port" value="4802"/>
+<parameter name="deviceModel" value="emulator_Nexus6P"/>
+<parameter name="deviceID" value="emulator-5556"/>
+<parameter name="sizeType" value="phone"/>
+<parameter name="osVersion" value="6.0"/>
+<classes>
+<class name="com.wweco.mm.demo.EnterUsername"/>
+</classes>
+</test>
 <!-- <test name="BlackBerry Priv">
 <parameter name="delay" value="0"/>
 <parameter name="port" value="4802"/>
