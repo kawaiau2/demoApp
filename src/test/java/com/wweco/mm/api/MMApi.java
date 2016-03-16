@@ -81,7 +81,7 @@ public class MMApi {
 
     public void accessWithoutLogin () throws TestingException {
         try {
-            driver.findElementByID(mapping.accessWithoutLoginButton("ID")).click();
+            driver.findElementById(mapping.accessWithoutLoginButton("ID")).click();
 
         } catch (Exception e) {
             throw new TestingException(e.getMessage());

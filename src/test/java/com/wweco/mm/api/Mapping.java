@@ -24,7 +24,7 @@ public class Mapping {
   	}
 
   	//sync with MappingAndroid and MappingiOS
-	public String username (String selectContent) {
+	public String accessWithoutLoginButton (String selectContent) {
 		return "";
 	}
 
