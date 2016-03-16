@@ -131,25 +131,25 @@ public class HTMLGenerator {
 	}
 
 	public void addDefaultHeader (String jbName) throws Exception {
-		if (!jbName.equals("")) {
-			jobName = jbName;
-		}
-		addBody("<div id=\"page-body\"><div id=\"header\">");
-		addBody("<div class=\"logo\"><a id=\"jenkins-home-link\" href=\"/\">");
-		addBody("<img id=\"jenkins-head-icon\" alt=\"title\" src=\"/static/64141ff4/images/headshot.png\">");
-		addBody("<img id=\"jenkins-name-icon\" height=\"34\" alt=\"title\" width=\"139\" src=\"/static/64141ff4/images/title.png\">");
-		addBody("</a></div>");
-		addBody("<div class=\"login\"><a href=\"https://unicorn.int.gibson.com/job/" + jobName + "\">Return to " + jobName + "</a>");
-		addBody("</div></div>");
+		// if (!jbName.equals("")) {
+		// 	jobName = jbName;
+		// }
+		// addBody("<div id=\"page-body\"><div id=\"header\">");
+		// addBody("<div class=\"logo\"><a id=\"jenkins-home-link\" href=\"/\">");
+		// addBody("<img id=\"jenkins-head-icon\" alt=\"title\" src=\"/static/64141ff4/images/headshot.png\">");
+		// addBody("<img id=\"jenkins-name-icon\" height=\"34\" alt=\"title\" width=\"139\" src=\"/static/64141ff4/images/title.png\">");
+		// addBody("</a></div>");
+		// addBody("<div class=\"login\"><a href=\"https://unicorn.int.gibson.com/job/" + jobName + "\">Return to " + jobName + "</a>");
+		// addBody("</div></div>");
 	}
 
 	public void addDefaultFooter (String bdNo) throws Exception {
-		if (!bdNo.equals("")) {
-			buildNo = bdNo;
-		}
-		addBody("<p> (Caution: without appium server log and jenkins reply)</p><br/>");
-		addBody("<a href=\"https://unicorn.int.gibson.com/job/" + jobName + "/" + buildNo + "/console\">Overall log in console</a><br/>");
-		addBody("<a href=\"https://unicorn.int.gibson.com/job/" + jobName + "/" + buildNo + "/artifact/*zip*/archive.zip\">Download all the Artifacts</a>");
+		// if (!bdNo.equals("")) {
+		// 	buildNo = bdNo;
+		// }
+		// addBody("<p> (Caution: without appium server log and jenkins reply)</p><br/>");
+		// addBody("<a href=\"https://unicorn.int.gibson.com/job/" + jobName + "/" + buildNo + "/console\">Overall log in console</a><br/>");
+		// addBody("<a href=\"https://unicorn.int.gibson.com/job/" + jobName + "/" + buildNo + "/artifact/*zip*/archive.zip\">Download all the Artifacts</a>");
 	}
 
 	public void addPipeChartScript () throws Exception {
@@ -160,7 +160,7 @@ public class HTMLGenerator {
 	}
 
 	public void addPlanTitle () throws Exception {
-		writerTxt.println("<h1>" + jobName + " No." + buildNo + " Result</h1>");
+		writerTxt.println("<h1>" + jobName + " No." + "buildNo" + " Result</h1>");
 	}
 
 	public void addChart (String chartTitle, int passed, int failed, int skipped, int errors) throws Exception {

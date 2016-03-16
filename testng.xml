@@ -4,24 +4,24 @@
 <suite name="Android Test Suite" thread-count="7" parallel="tests">
 <parameter name="jobName" value="demo"/>
 <parameter name="buildNo" value="na"/>
-<parameter name="firstPage" value="com.mm.merchant.app.LoginActivity"/>
+<!-- <parameter name="firstPage" value="com.mm.merchant.app.LoginActivity"/> -->
 <parameter name="OSType" value="Android"/>
-<parameter name="appID" value="com.mm.merchant.app"/>
+<parameter name="appID" value="com.mm.main.app"/>
 <listeners>
 <listener class-name="com.api.TestConfig"/>
 </listeners>
-<test name="emulator Nexus5">
+<test name="BlackBerry">
 <parameter name="delay" value="0"/>
 <parameter name="port" value="4801"/>
-<parameter name="deviceModel" value="emulator_Nexus5"/>
-<parameter name="deviceID" value="emulator-5554"/>
+<parameter name="deviceModel" value="BlackBerry Priv"/>
+<parameter name="deviceID" value="1162171619"/>
 <parameter name="sizeType" value="phone"/>
-<parameter name="osVersion" value="4.4"/>
+<parameter name="osVersion" value="5.1.1"/>
 <classes>
 <class name="com.wweco.mm.demo.EnterUsername"/>
 </classes>
 </test>
-<test name="emulator Nexus6P">
+<!-- <test name="emulator Nexus6P">
 <parameter name="delay" value="0"/>
 <parameter name="port" value="4802"/>
 <parameter name="deviceModel" value="emulator_Nexus6P"/>
@@ -31,7 +31,7 @@
 <classes>
 <class name="com.wweco.mm.demo.EnterUsername"/>
 </classes>
-</test>
+</test> -->
 <!-- <test name="BlackBerry Priv">
 <parameter name="delay" value="0"/>
 <parameter name="port" value="4802"/>
