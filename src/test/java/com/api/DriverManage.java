@@ -68,7 +68,7 @@ public class DriverManage {
                 capabilities.setCapability("noSign", "true"); //XXX must have
         //        capabilities.setCapability("app", app.getAbsolutePath());
                 capabilities.setCapability("appPackage", appID);
-                //capabilities.setCapability("appActivity", firstPage);
+                capabilities.setCapability("appActivity", firstPage);
                 capabilities.setCapability("deviceType", sizeType);
                 if (osVersion.equals("4.1")){
                     final File app = new File("app-production-debug.apk");
