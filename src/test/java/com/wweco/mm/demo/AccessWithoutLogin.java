@@ -120,6 +120,7 @@ public class AccessWithoutLogin {
         deviceOS = systemOS;
         deviceType = sizeType;
         // modelName = deviceModel;
+        System.out.println("abc");
         
         if (deviceOS.equals("Android")) {
             testCaseID = "trial";
