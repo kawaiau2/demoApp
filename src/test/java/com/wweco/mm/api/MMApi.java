@@ -79,25 +79,25 @@ public class MMApi {
     //     }
     // }
 
-    public void clickUserName () throws TestingException {
+    public void accessWithoutLogin () throws TestingException {
         try {
-            driver.findElementByXPath(mapping.username("XPATH")).click();
+            driver.findElementByID(mapping.accessWithoutLoginButton("ID")).click();
 
         } catch (Exception e) {
             throw new TestingException(e.getMessage());
         }
     }
 
-    public void enterUserName (int keyAscii) throws TestingException {
-        try {
-            //WebElement usernameFill = driver.findElementByXPath(mapping.username("XPATH"));
-            //Enter Ascii
-            driver.sendKeyEvent(keyAscii);
+    // public void enterUserName (int keyAscii) throws TestingException {
+    //     try {
+    //         //WebElement usernameFill = driver.findElementByXPath(mapping.username("XPATH"));
+    //         //Enter Ascii
+    //         driver.sendKeyEvent(keyAscii);
 
-        } catch (Exception e) {
-            throw new TestingException(e.getMessage());
-        }
-    }
+    //     } catch (Exception e) {
+    //         throw new TestingException(e.getMessage());
+    //     }
+    // }
 
     //method
 

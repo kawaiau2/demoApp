@@ -30,10 +30,10 @@ import io.appium.java_client.TouchAction;
 
 import static org.junit.Assert.*;
 
-public class EnterUsername {
+public class AccessWithoutLogin {
     
     private DriverManage driver;
-    private String testCaseID = "EnterUsername";
+    private String testCaseID = "AccessWithoutLogin";
     private ReportResult logReport;
     private String deviceOS;
     private String deviceType;
@@ -50,9 +50,9 @@ public class EnterUsername {
     @Test(timeOut = 120000)
     public void Step2() throws Exception {
         logReport.setTestStep("Step2");
-        logReport.addMsg("Click Username");
+        logReport.addMsg("AccessWithoutLogin");
         try {
-            apiAction.clickUserName();
+            apiAction.accessWithoutLogin();
         } catch (Exception ex) {
             try {
                 logReport.saveResult(false, ex.getMessage());
@@ -65,20 +65,20 @@ public class EnterUsername {
             } catch (Exception logE) {}
     }
 
-    @Test(timeOut = 120000)
-    public void Step3() throws Exception {
-        logReport.setTestStep("Step3");
-        logReport.addMsg("Enter very long name");
-        try {
-            //Enter 100 char in "a"
-            for (int i=0; i<100; i++)
-                apiAction.enterUserName(29);
-        } catch (Exception e) {
-            logReport.saveResult(false, e.getMessage());
-            throw new TestingException(e.getMessage());
-        }
-        logReport.saveResult(true, "100 char can be entered");
-    }
+    // @Test(timeOut = 120000)
+    // public void Step3() throws Exception {
+    //     logReport.setTestStep("Step3");
+    //     logReport.addMsg("Enter very long name");
+    //     try {
+    //         //Enter 100 char in "a"
+    //         for (int i=0; i<100; i++)
+    //             apiAction.enterUserName(29);
+    //     } catch (Exception e) {
+    //         logReport.saveResult(false, e.getMessage());
+    //         throw new TestingException(e.getMessage());
+    //     }
+    //     logReport.saveResult(true, "100 char can be entered");
+    // }
     
     // @Test(timeOut = 120000)
     // public void Step4() throws Exception {

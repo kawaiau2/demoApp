@@ -12,17 +12,17 @@ public class MappingAndroid extends Mapping {
 	}
 	
 	//each state of item create 1 attribute item and each itemName is sync with MappingiOS
-	public String username(String selectContent) {
+	public String accessWithoutLoginButton(String selectContent) {
 		Content select = Content.valueOf(selectContent);
 		switch (select) {
 			case XPATH:
 				return "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]";
 			case ID:
-				return "com.mm.merchant.app:id/userNameEditText";
+				return "com.mm.storefront.app:id/guest_login_in_button";
 			case NAME:
 				return "na";
 			case VALUE:
-				return "User Name";
+				return "直接开始逛逛";
 			case LABEL:
 				return "na";
 			case XAXIS:
