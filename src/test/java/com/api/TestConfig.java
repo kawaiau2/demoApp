@@ -50,6 +50,7 @@ public class TestConfig implements ISuiteListener{
 	public synchronized void onStart(ISuite suite) {
         System.out.println("Test Suite Start:");
         testResult = new TestResult ("", "");
+        System.out.println("abc");
         // testResult.defaultTest();
     }
 
