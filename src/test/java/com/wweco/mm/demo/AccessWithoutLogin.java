@@ -136,7 +136,7 @@ public class AccessWithoutLogin {
         logReport = new ReportResult(driver.outDriver(), deviceModel, testCaseID, osVersion, deviceID, deviceType, jobName, buildNo, "", Thread.currentThread());
         apiAction = new MMApi (port, deviceModel, appID, deviceID, firstPage, deviceOS, deviceType, osVersion, driver.outDriver(), logReport, Thread.currentThread());  
         //Add test case description
-        logReport.addMsg("Enter Username");
+        logReport.addMsg("Access without Login");
         logReport.testCaseStart();
         
         if (sizeType.equals("tablet")) {

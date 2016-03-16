@@ -18,7 +18,8 @@
 <parameter name="sizeType" value="phone"/>
 <parameter name="osVersion" value="5.1.1"/>
 <classes>
-<class name="com.wweco.mm.demo.AccessWithoutLogin"/>
+<!-- <class name="com.wweco.mm.demo.AccessWithoutLogin"/> -->
+<class name="com.wweco.mm.demo.Ac"/>
 </classes>
 </test>
 <!-- <test name="emulator Nexus6P">
