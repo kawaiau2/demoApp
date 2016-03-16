@@ -4,7 +4,7 @@
 <suite name="Android Test Suite" thread-count="7" parallel="tests">
 <parameter name="jobName" value="demo"/>
 <parameter name="buildNo" value="na"/>
-<parameter name="firstPage" value="com.mm.storefront.app.activity.storefront.LoginActivity"/>
+<parameter name="firstPage" value="com.mm.main.app.StartActivity"/>
 <parameter name="OSType" value="Android"/>
 <parameter name="appID" value="com.mm.storefront.app"/>
 <listeners>
